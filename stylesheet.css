@@ -1,0 +1,299 @@
+/* html5doctor.com Reset Stylesheet v1.6.1 Last Updated: 2010-09-17 Author: Richard Clark - http://richclarkdesign.com Twitter: @rich_clark */ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; outline:0; vertical-align:baseline; background:transparent; } 
+body { 
+  -webkit-appearance: none;
+-webkit-text-size-adjust: 100%;
+
+  /* プロジェクトによって変動 */ color: #000; line-height: 1.6; font-weight: 400; width: 100%; font-smoothing: antialiased; font-variant-numeric: tabular-nums; /* safari hover対策 */ -webkit-font-smoothing: antialiased; } 
+article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section { display:block; 
+} 
+ul, ol { list-style:none; } 
+blockquote, q { quotes:none; } 
+blockquote:before, blockquote:after, q:before, q:after { content:''; content:none; } 
+a { margin:0; padding:0; vertical-align:baseline; text-decoration: none; color: inherit; } 
+/* change colours to suit your needs */ 
+ins { background-color:#ff9; color:#000; text-decoration:none; } 
+/* change colours to suit your needs */ 
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; } 
+del { text-decoration: line-through; } 
+abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; } 
+table { border-collapse:collapse; border-spacing:0; } 
+/* change border colour to suit your needs */ 
+hr { display:block; height:1px; border:0; border-top:1px solid #cccccc; margin:1em 0; padding:0; } 
+input, select { vertical-align:middle; } 
+img { vertical-align: bottom; line-height: 1.0; } button { line-height: 1.0; background-color: transparent; border: none; cursor: pointer; outline: none; padding: 0; appearance: none; } 
+
+/* ---------------共通------------------ */
+.common_inner {
+  padding: 20px 50px;
+
+}
+.section_title {
+  font-size: 54px;
+  font-family: Copperplate;
+  color: #707070;
+  text-shadow:
+  1px 0 0 #100C0C,
+  0 1px 0#100C0C,
+  -1px 0 0 #100C0C,
+  0 -1px 0 #100C0C; 
+  }
+   
+
+.section_title_jp {
+  font-size: 23px;
+  font-family: 筑紫A丸ゴシック;
+  margin-bottom: 10px;
+  font-weight: bold;
+
+}
+.section_text {
+  font-size: 20px;
+  color: #4A4848;
+  font-family: 筑紫A丸ゴシック;
+
+}
+.more {
+  box-shadow: 0 6px #a2a2a2;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #d0d0d0;
+  padding:20px 80px;
+  border-radius: 35px;
+  border: 1px solid #d0d0d0;
+  color:  #4A4848;
+  margin-top: 30px;
+  letter-spacing: 0.1em;
+  }
+ 
+.more {
+  animation: more 2s ease-out infinite;
+  opacity: 1;
+}
+@keyframes more {
+  0%, 40%, 60%, 80% {
+    transform: scale(1.0);
+  }
+  50%, 70% {
+    transform: scale(0.95);
+  }
+} 
+
+
+
+/* 
+  animation: more 0.8s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+}  
+  @keyframes more{
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+} */
+.more:hover {
+  opacity: 1;
+}
+.more:active{
+    box-shadow: none;
+    position: relative;
+    top: 6px;
+}
+.more a:hover {
+  text-decoration: none;
+border-bottom: solid 2px #707070;
+}
+/* -----------header------------------ */
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #d0d0d0;
+  height: 90px;
+  padding:10px 70px;
+  position: fixed;
+ width: 100%;
+ z-index: 1;
+ border: 1px dotted #707070;
+ box-sizing:border-box;
+}
+
+.header h1 {
+  font-size: 54px;
+  margin-right: auto;
+  font-family: Copperplate;
+  color: #707070;
+  text-shadow:
+  1px 0 0 #100C0C,
+  0 1px 0#100C0C,
+  -1px 0 0 #100C0C,
+  0 -1px 0 #100C0C;
+  
+}
+.header_list {
+  font-size: 25px;
+  margin-right: 15px;
+  font-family: Copperplate;
+  color:#707070;
+  text-shadow:
+  1px 0 0 #100C0C,
+  0 1px 0#100C0C,
+  -1px 0 0 #100C0C,
+  0 -1px 0 #100C0C;
+}
+.header_list:hover{
+  text-decoration: none;
+  border-bottom: solid 2px #707070;
+}
+
+.header ul {
+  display: flex;
+}
+.header-image {
+  object-fit: contain;
+  clear:both;
+}
+.header-image img {
+  width: 100%;
+}
+/* --------about--------- */
+.about {
+  /* background-color: #d0d0d0; */
+  border: 1px solid #707070;  
+}
+.about_inner {
+  /* width: 80%; */
+  /* background-color: #fff;
+  border-radius: 15px; */
+  /* border:1px solid #707070;  */
+  padding-top:80px; 
+  margin:20px auto;
+  display:flex;
+  padding-bottom: 30px;
+    animation: fadeup 1s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+  }
+   
+  @keyframes fadeup {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.about img {
+  /* width: 25%; */
+  margin: 30px 40px 0 25px;
+}
+.about_inner .section_text {
+  margin-top: 50px;} 
+.about_inner .more {
+align-items: right;
+}
+.about .more img{
+margin:0;
+} 
+  
+/* ----------works---------- */
+.works {
+  border: 1px solid #707070;  
+}
+.work_inner {
+  /* display: flex; */
+  padding-bottom: 30px;
+  width: 80%;
+}
+.work {
+  margin-right: 30px;
+}
+.work .section_text {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.work iframe {
+  width:1000px;
+  height: 600px;
+  margin-bottom: 50px;
+}
+.work img {
+width: 80%;
+margin-top: 15px;
+}
+.works span {
+  color: #707070;
+  font-size: 18px;
+}
+/* ---------contact------------- */
+.contact {
+  border: 1px solid #707070;  
+  padding-bottom: 30px;
+  display: flex;
+}
+.contact_inner {
+  display: flex;
+}
+.contact_inner .more {
+  margin-right: 30px;
+  margin-bottom: 20px;
+} 
+.contact .more img {
+margin-right: 7px;
+}
+.bouquet {
+  margin-top: 40px;
+}
+ 
+@keyframes fuwafuwa {
+  0% {
+    transform:translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform:translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform:translate(0, 0) rotate(7deg);
+  }
+}
+ 
+
+/* --------skills---------- */
+.skill_studying .common_inner {
+  display: flex;
+  /* justify-content: space-between; */
+  border: 1px solid #707070;
+  padding-bottom: 30px;
+}
+
+.title_class {
+  margin-right: 30px;
+}
+/* --------space------------ */
+.space {
+  height:30px;
+  width:100%;
+  background-color: #DC8283;
+}
+
+
+
+
+
+
+/* -------footer------------ */
+.footer {
+  background-color: #DC8283;
+  text-align: center;
+  color:#6E6A6A;
+}
+  
